@@ -5,7 +5,10 @@ var fs = require('fs');
 app.use(express.logger());
 
 filename = "index.html";
-var data = buffer.toString(fs.readFileSync(filename));
+var buffer = new Buffer(stats.size);
+
+buffer = fs.readFileSync(filename);
+var data = buffer.toString("utf8", 0, buffer.length);
 
 app.get('/', function(request, response) {
   response.send(data);
