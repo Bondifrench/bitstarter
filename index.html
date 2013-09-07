@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
@@ -88,7 +89,7 @@
       }
       .asset {
       padding: 2.5% 0%;
-      text-align: center;
+
       }
       .footer {
       color: #cccccc;
@@ -102,7 +103,7 @@
       }
      </style>
 </head>
-<body>
+<body style>
   <!-- Mobile-friendly navbar adapted from example. -->
   <!-- http://examples.getbootstrap.com -->
 
@@ -130,12 +131,12 @@
 <!-- blogs.endjin.com/2013/04/tips-for-implenmeting-responsive-designs-using-bootstrap/ -->
 <!-- http://stackoverflow.com/a/12270322 --> 
   <div class="container">
-    <!-- Font and paired font of .heading/.subheadinbg and body from Google Fonts -->
+    <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
     <!-- www.google.com/fonts/specimen/Ubuntu -->
     <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
     <div class="row-fluid heading">
       <div class="span12">
-	<h1>Bar</h1>
+	<h1>Product: Development Version</h1>
 	</div>
       </div>
     <div class="row-fluid subheading">
@@ -147,14 +148,15 @@
       </div>
     <div class="row-fluid pitch">
       <div class="span5 offset1 video">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
 	</div>
 
 
     <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
     <div class="span5 actions">
+      <div class="row-fluid">
       <div class="span8 offset2">
-	<div class="statistics">
+	<div class="row-fluid statistics">
 	  <div class="span4">
 	    <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
 	    <div class="linediv-l">
@@ -173,28 +175,37 @@
 	    </div>
 	  </div>
 	</div>
+      
+      <div class="row-fluid">
+	<div class="span10 offset1">
+	  <!-- Bootstrap progress bar -->
+	  <!-- http://getbootstrap.com/components#progress -->
+	  <div class="thermometer progress active">
+	    <div class="bar bar-success" style="width: 60%;"></div>
+	    <div class="bar bar-warning" style="width: 40%;"></div>
+	    </div>
+	  </div>
+	</div>
 
-      <div class="span10 offset1">
-	<!-- Bootstrap progress bar -->
-	<!-- http://getbootstrap.com/components#progress -->
-	<div class="thermometer progress active">
-	<div class="bar bar-success" style="width: 60%;"></div>
-	<div class="bar bar-warning" style="width: 40%;"></div>
+      <div class="row-fluid">
+	<div class="span6 offset3 order">
+	  <!-- Standard Bootstrap button. -->
+	  <!-- httep://getbootstrap.com/components#btn-groups -->
+	  <button class="btn btn-success btn-large">Preorder</button>
+	  </div>
+	</div>
+
+      <div class="row-fluid">
+	<div class="span8 offset2 social">
+	  <!-- Social buttons are not included in default Bootstrap. -->
+	  <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+	  <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	  <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	  </div>
 	</div>
       </div>
-    <div class="span6 offset3 order">
-      <!-- Standard Bootstrap button. -->
-      <!-- httep://getbootstrap.com/components#btn-groups -->
-      <button class="btn btn-success btn-large">Preorder</button>
-      </div>
-    <div class="span8 offset2 social">
-      <!-- Social buttons are not included in default Bootstrap. -->
-      <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-      <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-      <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
       </div>
     </div>
-  </div>
 
     <!-- Beyond this part the marketing copy begins. -->
     <!-- https://developer.mozilla.org/en-USdocs/Web/CSS/text-align -->
@@ -202,7 +213,7 @@
     <!-- http://placehold.it -->
     <div class="row-fluid section1">
       <div class="span5 offset1 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
 	</div>
       <div class="span5 copy">
 	<p>
@@ -218,7 +229,7 @@
 	  </p>
 	</div>
       <div class="span5 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
 	</div>
       </div>
 
